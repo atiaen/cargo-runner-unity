@@ -67,10 +67,6 @@ public class Spawner : MonoBehaviour
             // Choose a random enemy prefab from the list
             GameObject enemyPrefab = EnemyPrefabs[Random.Range(0, EnemyPrefabs.Count)];
 
-            //int spawnPointIndex = Random.Range(0, spawnPoints.Length);
-
-            //var SpawnPoint = spawnPoints[spawnPointIndex];
-
             // Generate a random forward direction
             Vector3 randomForwardDirection = spawnp.forward + new Vector3(
                 Random.Range(-1.0f, 1.0f),
@@ -89,5 +85,21 @@ public class Spawner : MonoBehaviour
 
         }
        
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (spawnPoints == null) return;
+
+        Gizmos.color = Color.green; // Set gizmo color
+
+        foreach (Transform spawnp in spawnPoints)
+        {
+            if (spawnp != null)
+            {
+                Gizmos.DrawWireSphere(spawnp.position, MinDistance); // Draw the minimum distance sphere
+                Gizmos.DrawWireSphere(spawnp.position, MaxDistance); // Draw the maximum distance sphere
+            }
+        }
     }
 }
