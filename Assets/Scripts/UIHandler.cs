@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIHandler : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class UIHandler : MonoBehaviour
     public GameObject gameOverPanel;
 
     public TMP_Text scoreText;
+    public Image shieldImage;
 
     public float menuAnimSpeed;
 
@@ -20,13 +22,15 @@ public class UIHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        AdjustShieldImage();
     }
 
     // Update is called once per frame
     void Update()
     {
         scoreText.text = $"Score: {GameManager.Instance.score}";
+        AdjustShieldImage();
+        //shieldImage.DOFillAmount();
     }
 
     void OnEnable()
@@ -92,6 +96,12 @@ public class UIHandler : MonoBehaviour
         confirmExitPanel.transform.DOScale(0, menuAnimSpeed);
         pausePanel.transform.DOScale(1, menuAnimSpeed);
 
+    }
+
+    public void AdjustShieldImage()
+    {
+        float fillAmount = GameManager.Instance.heldShields / GameManager.Instance.maxShields;
+        shieldImage.fillAmount = fillAmount;
     }
 
     public void GoToScene(string scene)

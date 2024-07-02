@@ -32,9 +32,7 @@ public class NetScript : MonoBehaviour
         {
             Destroy(other.gameObject);
             GameManager.OnEnemyDestroyed?.Invoke();
-        }
-
-        if (other.CompareTag("Pickup"))
+        }else if (other.CompareTag("Pickup"))
         {
             Destroy(other.gameObject);
         }
@@ -47,9 +45,7 @@ public class NetScript : MonoBehaviour
         {
             Destroy(other.gameObject);
             GameManager.OnEnemyDestroyed?.Invoke();
-        }
-
-        if (other.CompareTag("Pickup"))
+        }else if (other.CompareTag("Pickup"))
         {
             Destroy(other.gameObject);
         }

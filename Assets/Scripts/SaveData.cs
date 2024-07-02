@@ -16,6 +16,6 @@ public class SaveData
     //public bool infinteMode = false;
     public int controlType = 0;
     public int highScore = 0;
-    public int maxShields = 0;
+    public int maxShields = 6;
 
 }

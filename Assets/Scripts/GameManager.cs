@@ -1,8 +1,10 @@
+using DG.Tweening;
 using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,11 +13,14 @@ public class GameManager : MonoBehaviour
     public int score = 0;
     public int highScore = 0;
 
-    public int heldPickups = 0;
-    public int maxShields;
+    public float heldShields = 0;
+    public float maxShields;
+    public bool shieldActive = false;
 
     public static float rotateSpeed = 0.85f;
+    public float shieldAnimSpeed = 0.5f;
 
+    public ParticleSystem playerShield;
 
     public GameObject[] sceneSpawners;
 
@@ -31,6 +36,8 @@ public class GameManager : MonoBehaviour
     public static Action OnGameOver;
     public static Action OnPauseGame;
     public static Action OnResumeGame;
+    public static Action OnShieldUsed;
+    public static Action OnShieldHit;
 
     public SaveData gameData;
 
@@ -73,15 +80,18 @@ public class GameManager : MonoBehaviour
     {
         PlayerScript.OnPlayerHit += GameOver;
         OnEnemyDestroyed += IncreaseScore;
+        OnShieldHit += shieldHit;
     }
 
     void OnDisable()
     {
         PlayerScript.OnPlayerHit -= GameOver;
         OnEnemyDestroyed -= IncreaseScore;
+        OnShieldHit -= shieldHit;
         score = 0;
         gamePaused = true;
         isGameOver = false;
+        rotateSpeed = 0f;
     }
 
     void Update()
@@ -95,6 +105,15 @@ public class GameManager : MonoBehaviour
             {
                 gamePaused = !gamePaused;
             }
+
+            if (Input.GetButtonDown("Shield") && heldShields > 0 && !shieldActive)
+            {
+                playerShield.transform.DOScale(1, shieldAnimSpeed);
+                shieldActive = true;
+                heldShields=heldShields - 1;
+                heldShields = Mathf.Clamp(heldShields, 0, maxShields);
+            }
+
             // Check if the pause state has changed
             if (gamePaused != previousGamePaused)
             {
@@ -137,6 +156,13 @@ public class GameManager : MonoBehaviour
     {
         int gameScore = UnityEngine.Random.Range(minScore, maxScore + 1);
         score += gameScore;
+    }
+
+    public void shieldHit()
+    {
+        playerShield.transform.DOScale(0, shieldAnimSpeed);
+        shieldActive = false;
+
     }
 
     public void IncreaseScoreWithValues(int lower, int upper)
