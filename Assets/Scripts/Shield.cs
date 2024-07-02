@@ -21,6 +21,7 @@ public class Shield : MonoBehaviour
         // Check for enemy
         if (other.CompareTag("Enemy"))
         {
+            Debug.Log("Hit enemy");
             Destroy(other.gameObject);
             GameManager.OnEnemyDestroyed?.Invoke();
             GameManager.OnShieldHit?.Invoke();

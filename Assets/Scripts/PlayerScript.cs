@@ -59,8 +59,19 @@ public class PlayerScript : MonoBehaviour
         // Check for player
         if (collider.CompareTag("Enemy"))
         {
-            gameOver = true;
-            OnPlayerHit?.Invoke();
+            var shieldActive = GameManager.Instance.shieldActive;
+            if (shieldActive)
+            {
+                Debug.Log("ShieldActive");
+                GameManager.OnShieldHit?.Invoke();
+            }
+            else
+            {
+                Debug.Log("ShieldInactive");
+                gameOver = true;
+                OnPlayerHit?.Invoke();
+            }
+
         }
     }
 
