@@ -39,18 +39,21 @@ public class PlayerScript : MonoBehaviour
         // Check for player
         if (collider.CompareTag("Enemy"))
         {
-            var shieldActive = GameManager.Instance.shieldActive;
-            if (shieldActive)
-            {
+            //var shieldActive = GameManager.Instance.shieldActive;
+            //if (shieldActive)
+            //{
 
-                GameManager.OnShieldHit?.Invoke();
-            }
-            else
-            {
-                gameOver = true;
-                OnPlayerHit?.Invoke();
-            }
-          
+            //    GameManager.OnShieldHit?.Invoke();
+            //}
+            //else
+            //{
+            //    gameOver = true;
+            //    OnPlayerHit?.Invoke();
+            //}
+            Debug.Log("ShieldInactive");
+            gameOver = true;
+            OnPlayerHit?.Invoke();
+
         }
     }
 
@@ -59,18 +62,22 @@ public class PlayerScript : MonoBehaviour
         // Check for player
         if (collider.CompareTag("Enemy"))
         {
-            var shieldActive = GameManager.Instance.shieldActive;
-            if (shieldActive)
-            {
-                Debug.Log("ShieldActive");
-                GameManager.OnShieldHit?.Invoke();
-            }
-            else
-            {
-                Debug.Log("ShieldInactive");
-                gameOver = true;
-                OnPlayerHit?.Invoke();
-            }
+            //var shieldActive = GameManager.Instance.shieldActive;
+            //if (shieldActive)
+            //{
+            //    Debug.Log("ShieldActive");
+            //    GameManager.OnShieldHit?.Invoke();
+            //}
+            //else
+            //{
+            //    Debug.Log("ShieldInactive");
+            //    gameOver = true;
+            //    OnPlayerHit?.Invoke();
+            //}
+
+            Debug.Log("ShieldInactive");
+            gameOver = true;
+            OnPlayerHit?.Invoke();
 
         }
     }

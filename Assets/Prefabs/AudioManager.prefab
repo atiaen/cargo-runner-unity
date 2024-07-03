@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6314994939832138284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5235531114231460540}
+  - component: {fileID: 9212388305850874775}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5235531114231460540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6314994939832138284}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9212388305850874775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6314994939832138284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5480b8ee2eae57f47b97bf48a1d55320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 0}
+  sfxSource: {fileID: 0}
+  soundEffects:
+  - name: 
+    clip: {fileID: 0}
+  musicTracks:
+  - name: Brave Space Explorers
+    clip: {fileID: 8300000, guid: 69f3c29ad4dacd34fa5402348acf616e, type: 3}
+  - name: Space Bass Evil
+    clip: {fileID: 8300000, guid: 629442da8b8bf9846914e86721fd1c15, type: 3}
+  - name: Space Chase
+    clip: {fileID: 8300000, guid: 4a90b0833d6dde2428f420ec63a498cc, type: 3}
+  - name: Space Walk
+    clip: {fileID: 8300000, guid: bce3ec10a2dc81145ab8018cec04547f, type: 3}
+  - name: Through Space
+    clip: {fileID: 8300000, guid: 6e7e5a95528d8b245be8a165d95b23ea, type: 3}

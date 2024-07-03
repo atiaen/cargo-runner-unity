@@ -7,9 +7,9 @@ public class SaveData
     public float dropRate = 3f;
     public float musicVolume = 0.5f;
     public float soundEffectVolume = 0.5f;
-    public float initialSpawnInterval = 2.0f;
-    public float minimumSpawnInterval = 0.5f;
-    public float spawnIntervalDecreaseRate = 0.1f;
+    public float initialSpawnInterval = 3.5f;
+    public float minimumSpawnInterval = 1f;
+    public float spawnIntervalDecreaseRate = 0.4f;
     public bool infinteMode = false;
     public bool enableRockerAiders = false;
     public bool autoEnableShields = false;

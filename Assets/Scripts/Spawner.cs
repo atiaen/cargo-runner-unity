@@ -22,7 +22,7 @@ public class Spawner : MonoBehaviour
     private float spawnTimer = 0.0f;
 
     // Current spawn interval
-    private float currentSpawnInterval;
+    public float currentSpawnInterval;
 
     // Distance range for spawning
     public float MinDistance = 100f;
