@@ -30,6 +30,7 @@ public class NetScript : MonoBehaviour
         // Check for enemy
         if (other.CompareTag("Enemy"))
         {
+            AudioManager.Instance.PlaySoundEffect("Net");
             Destroy(other.gameObject);
             GameManager.OnEnemyDestroyed?.Invoke();
         }else if (other.CompareTag("Pickup"))
@@ -43,6 +44,7 @@ public class NetScript : MonoBehaviour
         // Check for enemy
         if (other.CompareTag("Enemy"))
         {
+            AudioManager.Instance.PlaySoundEffect("Net");
             Destroy(other.gameObject);
             GameManager.OnEnemyDestroyed?.Invoke();
         }else if (other.CompareTag("Pickup"))

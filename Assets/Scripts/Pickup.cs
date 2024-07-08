@@ -7,11 +7,13 @@ public class Pickup : MonoBehaviour
     public int pickupType;
     public int lowerValue;
     public int upperValue;
+    public float destroyDelay = 5f; // Time in seconds before destroying the object
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(DestroyAfterDelay());
+
     }
 
     // Update is called once per frame
@@ -25,6 +27,7 @@ public class Pickup : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
+            AudioManager.Instance.PlaySoundEffect("Pickup");
 
             if(pickupType == 0)
             {
@@ -60,4 +63,11 @@ public class Pickup : MonoBehaviour
         }
 
     }
+
+    IEnumerator DestroyAfterDelay()
+    {
+        yield return new WaitForSeconds(destroyDelay);
+        Destroy(gameObject);
+    }
+
 }

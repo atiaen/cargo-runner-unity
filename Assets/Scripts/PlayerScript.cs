@@ -14,6 +14,7 @@ public class PlayerScript : MonoBehaviour
 
     private Vector3 originalPosition;
     public GameManager gameManager;
+    public AudioSource engineSound;
 
     void Start()
     {
@@ -50,7 +51,8 @@ public class PlayerScript : MonoBehaviour
             //    gameOver = true;
             //    OnPlayerHit?.Invoke();
             //}
-            Debug.Log("ShieldInactive");
+            //Debug.Log("ShieldInactive");
+            AudioManager.Instance.PlaySoundEffect("Impact");
             gameOver = true;
             OnPlayerHit?.Invoke();
 
@@ -75,7 +77,7 @@ public class PlayerScript : MonoBehaviour
             //    OnPlayerHit?.Invoke();
             //}
 
-            Debug.Log("ShieldInactive");
+            AudioManager.Instance.PlaySoundEffect("Impact");
             gameOver = true;
             OnPlayerHit?.Invoke();
 
@@ -117,6 +119,11 @@ public class PlayerScript : MonoBehaviour
             Vector3 clampedPosition = ClampPositionToViewport(finalPosition);
 
             transform.position = clampedPosition;
+        }
+        else
+        {
+            engineSound.Stop();
+            engineSound.loop = false;
         }
     }
 

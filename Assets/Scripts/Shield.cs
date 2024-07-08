@@ -26,13 +26,14 @@ public class Shield : MonoBehaviour
 
     }
 
-
+  
     void OnTriggerEnter(Collider other)
     {
         // Check for enemy
         if (other.CompareTag("Enemy"))
         {
             Debug.Log("Hit enemy");
+            AudioManager.Instance.PlaySoundEffect("Impact");
             Destroy(other.gameObject);
             GameManager.OnEnemyDestroyed?.Invoke();
             GameManager.OnShieldHit?.Invoke();

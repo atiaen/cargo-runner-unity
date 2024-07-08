@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Playables;
@@ -23,9 +24,10 @@ public class GameManager : MonoBehaviour
     public ParticleSystem playerShield;
 
     public GameObject[] sceneSpawners;
-
+    public List<string> tips;
     public bool isGameOver = false;
     public bool gamePaused = false;
+    public bool playedTutorial = false;
     private bool previousGamePaused = false;
     public bool autoShieldsEnabled = false;
 
@@ -38,8 +40,11 @@ public class GameManager : MonoBehaviour
     public static Action OnResumeGame;
     public static Action OnShieldUsed;
     public static Action OnShieldHit;
+    public static Action OnStartTutorial;
 
     public SaveData gameData;
+
+    public int currentStep = 0;
 
     private void Awake()
     {
@@ -74,6 +79,12 @@ public class GameManager : MonoBehaviour
         }
 
         ApplyGameSettings();
+
+
+        if (!gameData.playedTutorial)
+        {
+            StartTutorial();
+        }
     }
 
     void OnEnable()
@@ -99,7 +110,7 @@ public class GameManager : MonoBehaviour
 
         RenderSettings.skybox.SetFloat("_Rotation", Time.time * rotateSpeed);
 
-        if (!isGameOver)
+        if (!isGameOver && playedTutorial)
         {
             if (Input.GetKeyDown(KeyCode.P))
             {
@@ -108,6 +119,7 @@ public class GameManager : MonoBehaviour
 
             if (Input.GetButtonDown("Shield") && heldShields > 0 && !shieldActive)
             {
+                AudioManager.Instance.PlaySoundEffect("Shield");
                 playerShield.transform.DOScale(1, shieldAnimSpeed);
                 shieldActive = true;
                 heldShields=heldShields - 1;
@@ -132,6 +144,19 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
+    public void StartTutorial()
+    {
+        Time.timeScale = 0.0001f;
+        currentStep = 0;
+        OnStartTutorial?.Invoke();
+    }
+
+    public void IncreaseStep()
+    {
+        currentStep++;
+    }
+
     public void Pause()
     {
         OnPauseGame?.Invoke();
@@ -149,6 +174,12 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0.00001f;
         isGameOver = true;
         OnGameOver?.Invoke();
+
+        if(score > gameData.highScore)
+        {
+            gameData.highScore = score;
+            SaveSystem.SaveGame(gameData);
+        }
         Debug.Log("Game Over");
     }
 
@@ -176,6 +207,8 @@ public class GameManager : MonoBehaviour
     {
         highScore = gameData.highScore;
         maxShields = gameData.maxShields;
+        playedTutorial = gameData.playedTutorial;
+
         foreach (GameObject obj in sceneSpawners)
         {
             Spawner script = obj.GetComponent<Spawner>();
@@ -184,6 +217,7 @@ public class GameManager : MonoBehaviour
                 script.minimumSpawnInterval = gameData.minimumSpawnInterval;
                 script.spawnIntervalDecreaseRate = gameData.spawnIntervalDecreaseRate;
                 script.initialSpawnInterval = gameData.initialSpawnInterval;
+                //script.currentSpawnInterval =gameData.
             }
         }
     }
