@@ -46,7 +46,8 @@ public class AudioManager : MonoBehaviour
         musicSource = gameObject.AddComponent<AudioSource>();
         sfxSource = gameObject.AddComponent<AudioSource>();
 
-        musicSource.volume = 0.2f;
+        musicSource.volume = GameManager.Instance.gameData.musicVolume;
+        sfxSource.volume = GameManager.Instance.gameData.soundEffectVolume;
 
         // Play the first music track
         PlayNextMusicTrack();

@@ -19568,7 +19568,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 4481037.5}
+  m_AnchoredPosition: {x: 0, y: 4707946.5}
   m_SizeDelta: {x: 0, y: 400}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1472050274
@@ -25306,8 +25306,9 @@ MonoBehaviour:
   tips:
   - Remember to always activate your shields when things start to get intense
   - If you haven't already don't forget to fill in the survey in the main menu
-  - Remember you can always change your controls in the options menu
-  - No matter how man
+  - If you don't like the current control scheme you can always change it in the
+    options menu
+  - Gameplay can get very intese; Take a break if you need it
   isGameOver: 0
   gamePaused: 0
   playedTutorial: 0
