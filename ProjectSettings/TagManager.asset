@@ -8,6 +8,7 @@ TagManager:
   - Spawner
   - Pickup
   - Net
+  - PickupSpawner
   layers:
   - Default
   - TransparentFX

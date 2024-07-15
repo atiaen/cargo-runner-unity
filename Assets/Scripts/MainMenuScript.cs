@@ -16,8 +16,8 @@ public class MainMenuScript : MonoBehaviour
 
     public float optionsAnimSpeed;
 
-    // public float 
     public SaveData gameData;
+
 
     // Start is called before the first frame update
     void Start()

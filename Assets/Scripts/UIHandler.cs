@@ -70,7 +70,7 @@ public class UIHandler : MonoBehaviour
         pausePanel.transform.DOScale(0, menuAnimSpeed);
         gameOverPanel.transform.DOScale(0, menuAnimSpeed);
         confirmExitPanel.transform.DOScale(0, menuAnimSpeed);
-        optionsPanel.transform.DOScale(1.3f, menuAnimSpeed);
+        optionsPanel.transform.DOScale(1f, menuAnimSpeed);
     }
 
     public void OnPauseGame()

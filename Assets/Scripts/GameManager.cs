@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public float heldShields = 0;
     public float maxShields;
     public bool shieldActive = false;
+    public bool infiniteMode = false;
 
     public static float rotateSpeed = 0.85f;
     public float shieldAnimSpeed = 0.5f;
@@ -24,12 +25,13 @@ public class GameManager : MonoBehaviour
     public ParticleSystem playerShield;
 
     public GameObject[] sceneSpawners;
+    public GameObject[] pickupSpawners;
     public List<string> tips;
     public bool isGameOver = false;
     public bool gamePaused = false;
     public bool playedTutorial = false;
     private bool previousGamePaused = false;
-    public bool autoShieldsEnabled = false;
+    public bool audioAlerts = false;
 
     public int minScore = 450;
     public int maxScore = 500;
@@ -43,28 +45,27 @@ public class GameManager : MonoBehaviour
     public static Action OnStartTutorial;
 
     public SaveData gameData;
+    public KeyBinding keyBindings;
 
     public int currentStep = 0;
 
     private void Awake()
     {
-        // If an instance already exists and it's not this one, destroy this instance
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
 
-        // Set the instance to this object
         Instance = this;
 
-        // Ensure GameManager persists across scenes
         //DontDestroyOnLoad(gameObject);
     }
 
     void Start()
     {
         sceneSpawners = GameObject.FindGameObjectsWithTag("Spawner");
+        pickupSpawners = GameObject.FindGameObjectsWithTag("PickupSpawner");
         //Debug.Log(Application.persistentDataPath);
         var loaded = SaveSystem.LoadGame();
         if (loaded == null)
@@ -80,11 +81,6 @@ public class GameManager : MonoBehaviour
 
         ApplyGameSettings();
 
-
-        if (!gameData.playedTutorial)
-        {
-            StartTutorial();
-        }
     }
 
     void OnEnable()
@@ -112,21 +108,20 @@ public class GameManager : MonoBehaviour
 
         if (!isGameOver && playedTutorial)
         {
-            if (Input.GetKeyDown(KeyCode.P))
+            if (Input.GetKeyDown(keyBindings.pause))
             {
                 gamePaused = !gamePaused;
             }
 
-            if (Input.GetButtonDown("Shield") && heldShields > 0 && !shieldActive)
+            if (Input.GetKeyDown(keyBindings.activateShield) && heldShields > 0 && !shieldActive)
             {
                 AudioManager.Instance.PlaySoundEffect("Shield");
                 playerShield.transform.DOScale(1, shieldAnimSpeed);
                 shieldActive = true;
-                heldShields=heldShields - 1;
+                heldShields = heldShields - 1;
                 heldShields = Mathf.Clamp(heldShields, 0, maxShields);
             }
 
-            // Check if the pause state has changed
             if (gamePaused != previousGamePaused)
             {
                 if (gamePaused)
@@ -138,7 +133,6 @@ public class GameManager : MonoBehaviour
                     Resume();
                 }
 
-                // Update the previous state to the current state
                 previousGamePaused = gamePaused;
             }
         }
@@ -175,7 +169,7 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
         OnGameOver?.Invoke();
 
-        if(score > gameData.highScore)
+        if (score > gameData.highScore)
         {
             gameData.highScore = score;
             SaveSystem.SaveGame(gameData);
@@ -203,22 +197,43 @@ public class GameManager : MonoBehaviour
     }
 
 
-    void ApplyGameSettings()
+    public void ApplyGameSettings()
     {
         highScore = gameData.highScore;
         maxShields = gameData.maxShields;
         playedTutorial = gameData.playedTutorial;
+        infiniteMode = gameData.infinteMode;
+        audioAlerts = gameData.audioAlerts;
+        keyBindings = gameData.keyBindings;
 
         foreach (GameObject obj in sceneSpawners)
         {
-            Spawner script = obj.GetComponent<Spawner>();
-            if (script != null)
+            if (obj.CompareTag("Spawner"))
             {
-                script.minimumSpawnInterval = gameData.minimumSpawnInterval;
-                script.spawnIntervalDecreaseRate = gameData.spawnIntervalDecreaseRate;
-                script.initialSpawnInterval = gameData.initialSpawnInterval;
-                //script.currentSpawnInterval =gameData.
+                Spawner script = obj.GetComponent<Spawner>();
+                if (script != null)
+                {
+                    script.minimumSpawnInterval = gameData.minimumSpawnInterval;
+                    script.spawnIntervalDecreaseRate = gameData.spawnIntervalDecreaseRate;
+                    script.initialSpawnInterval = gameData.initialSpawnInterval;
+                }
             }
+
+        }
+        foreach (GameObject obj in pickupSpawners)
+        {
+
+            if (obj.CompareTag("PickupSpawner"))
+            {
+                Spawner script = obj.GetComponent<Spawner>();
+                if (script != null)
+                {
+                    script.minimumSpawnInterval = gameData.pickupminimumSpawnInterval;
+                    script.spawnIntervalDecreaseRate = gameData.pickupspawnIntervalDecreaseRate;
+                    script.initialSpawnInterval = gameData.pickupinitialSpawnInterval;
+                }
+            }
+
         }
     }
 }

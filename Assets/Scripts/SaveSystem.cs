@@ -13,7 +13,7 @@ public static class SaveSystem
         {
             string json = JsonUtility.ToJson(data);
             File.WriteAllText(saveFilePath, json);
-            Debug.Log("Game saved successfully");
+            //Debug.Log("Game saved successfully");
         }
         catch (Exception e)
         {
@@ -29,18 +29,16 @@ public static class SaveSystem
             {
                 string json = File.ReadAllText(saveFilePath);
                 SaveData data = JsonUtility.FromJson<SaveData>(json);
-                Debug.Log("Game loaded successfully");
                 return data;
             }
             else
             {
-                Debug.LogWarning("Save file not found");
                 return null; // Return default data if no save file found
             }
         }
         catch (Exception e)
         {
-            Debug.LogError("Failed to load game: " + e.Message);
+            Debug.Log(e.Message);
             return null; // Return default data on error
         }
     }

@@ -443,7 +443,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114639532240714720}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: accessibilitysettings, Assembly-CSharp
         m_MethodName: OnSpeechRateSliderChanged
         m_Mode: 1
         m_Arguments:
@@ -598,7 +598,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114639532240714720}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: accessibilitysettings, Assembly-CSharp
         m_MethodName: OnAccessibilityEnabledToggleChanged
         m_Mode: 0
         m_Arguments:

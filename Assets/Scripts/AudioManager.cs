@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource musicSource;
     public AudioSource sfxSource;
 
+    public SaveData saveData;
 
     [System.Serializable]
     public struct SoundEffectPool
@@ -30,7 +31,6 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-        // Ensure only one instance of the AudioManager exists
         if (Instance == null)
         {
             Instance = this;
@@ -42,24 +42,27 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        // Create audio sources
         musicSource = gameObject.AddComponent<AudioSource>();
         sfxSource = gameObject.AddComponent<AudioSource>();
 
-        musicSource.volume = GameManager.Instance.gameData.musicVolume;
-        sfxSource.volume = GameManager.Instance.gameData.soundEffectVolume;
 
-        // Play the first music track
         PlayNextMusicTrack();
+    }
+    public void Start()
+    {
+        ReloadSettings();
+
     }
 
     void Update()
     {
-        // Check if the current music track has finished playing
+
         if (!musicSource.isPlaying)
         {
             PlayNextMusicTrack();
         }
+
+
     }
 
     public void PlaySoundEffect(string category)
@@ -77,7 +80,14 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // Function to play the next music track
+    public void ReloadSettings()
+    {
+        saveData = SaveSystem.LoadGame();
+
+        musicSource.volume = saveData.musicVolume;
+        sfxSource.volume = saveData.soundEffectVolume;
+    }
+
     private void PlayNextMusicTrack()
     {
         if (musicTracks.Count == 0)
@@ -86,13 +96,11 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        // Randomly select a new music track from the list
         int randomIndex = Random.Range(0, musicTracks.Count);
         musicSource.clip = musicTracks[randomIndex].clip;
         musicSource.Play();
     }
 
-    // Function to play a specific music track by name
     public void PlayMusicTrack(string trackName)
     {
         MusicTrack musicTrack = musicTracks.Find(mt => mt.name == trackName);

@@ -31,13 +31,6 @@ public class Pickup : MonoBehaviour
 
             if(pickupType == 0)
             {
-                Debug.Log("I've hit the player and I'm a shield");
-               bool autoShieldsEnabled = GameManager.Instance.autoShieldsEnabled;
-                if (autoShieldsEnabled)
-                {
-
-                }
-
                 var currentShields = GameManager.Instance.heldShields;
                 var maxShields = GameManager.Instance.maxShields;
 
