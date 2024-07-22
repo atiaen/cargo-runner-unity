@@ -13,11 +13,28 @@ public class GridGen : MonoBehaviour
     private Tile[,] grid;
     private bool[] unlockedLanes; // Array to track unlocked lanes
 
+
+    public float spawnInterval = 1.0f; // Time interval between each shot
+    public float projectileSpeed = 10.0f; // Speed of the projectile
+
+    private float nextAttackTime;
+
     void Start()
     {
         CreateGrid();
         InitializeLanes();
-        StartCoroutine(SpawnEnemies());
+        nextAttackTime = Time.time;
+
+
+    }
+
+    private void Update()
+    {
+        if (Time.time >= nextAttackTime)
+        {
+            SpawnEnemy();
+            nextAttackTime = Time.time + spawnInterval;
+        }
     }
 
     void CreateGrid()
@@ -72,15 +89,6 @@ public class GridGen : MonoBehaviour
         }
     }
 
-    IEnumerator SpawnEnemies()
-    {
-        while (true)
-        {
-            SpawnEnemy();
-            yield return new WaitForSeconds(2f); // Spawn an enemy every 2 seconds
-        }
-    }
-
     void SpawnEnemy()
     {
         List<int> availableLanes = new List<int>();
@@ -103,7 +111,7 @@ public class GridGen : MonoBehaviour
             GameObject enemy = Instantiate(enemyPrefab, worldSpawnPosition, Quaternion.identity);
             enemy.transform.rotation = Quaternion.Euler(0, -90, 0); // Assuming 90 degrees Y rotation to face the X-axis
 
-            enemy.GetComponent<GridEnemy>().Init(grid, tileSize, gridWidth, gridHeight, transform); // Pass the parent transform
+            //enemy.GetComponent<GridEnemy>().Init(grid, tileSize, gridWidth, gridHeight, transform); // Pass the parent transform
         }
     }
 

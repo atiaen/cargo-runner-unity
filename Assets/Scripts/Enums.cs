@@ -27,7 +27,7 @@ public class KeyBinding
     public KeyCode moveRight = KeyCode.D;
     public KeyCode moveUp = KeyCode.W;
     public KeyCode moveDown = KeyCode.S;
-    public KeyCode activateShield = KeyCode.Space;
+    public KeyCode activateShield = KeyCode.LeftShift;
     public KeyCode pause = KeyCode.Escape;
 
     public void SetKey(string action, KeyCode key)

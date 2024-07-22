@@ -1,12 +1,8 @@
+using TMPro;
 using UnityEngine;
 
 public class GridEnemy : MonoBehaviour
 {
-    private Tile[,] grid;
-    private float tileSize;
-    private int gridWidth;
-    private int gridHeight;
-    private Transform gridTransform;
 
     public Vector3 boxSize = new Vector3(1, 1, 1); // Size of the box
     public Vector3 addedDirection = new Vector3(1,1,1); // Direction to cast the box
@@ -14,18 +10,35 @@ public class GridEnemy : MonoBehaviour
     public LayerMask layerMask; // Layer mask to filter the objects to collide with
 
     public float moveSpeed = 2.0f;
+    public float attackDamage = 0.2f;
 
-    public void Init(Tile[,] grid, float tileSize, int gridWidth, int gridHeight, Transform gridTransform)
+    public float health = 2.0f;
+
+    public float attackInterval = 1.0f; // Time interval between each shot
+
+    private float nextAttackTime;
+
+    public TMP_Text healthText;
+
+    private void Start()
     {
-        this.grid = grid;
-        this.tileSize = tileSize;
-        this.gridWidth = gridWidth;
-        this.gridHeight = gridHeight;
-        this.gridTransform = gridTransform;
+        nextAttackTime = Time.time;
+        string formattedValue = health.ToString("F1");
+
+        healthText.text = formattedValue;
+
     }
 
     void Update()
     {
+        string formattedValue = health.ToString("F1");
+
+        healthText.text = formattedValue;
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
 
         // The starting point of the BoxCast
         Vector3 origin = transform.position;
@@ -40,6 +53,13 @@ public class GridEnemy : MonoBehaviour
         if (isHit)
         {
             Debug.Log("BoxCast hit: " + hit.collider.name);
+            if (Time.time >= nextAttackTime)
+            {
+                var other = hit.collider.gameObject.GetComponent<BotTurret>();
+                other.botType.health -= attackDamage;
+
+                nextAttackTime = Time.time + attackInterval;
+            }
         }
         else
         {
@@ -49,34 +69,6 @@ public class GridEnemy : MonoBehaviour
 
     
 
-        //MoveAlongXAxis();
-    }
-
-    void MoveAlongXAxis()
-    {
-        Vector3 newPosition = transform.position + Vector3.left * moveSpeed * Time.deltaTime; // Move along negative X-axis
-        Vector3 localPosition = gridTransform.InverseTransformPoint(newPosition);
-
-        // Check if the new position is within the grid bounds
-        int x = Mathf.FloorToInt(localPosition.x / tileSize);
-        int y = Mathf.FloorToInt(localPosition.z / tileSize);
-
-        if (x >= 0 && x < gridWidth && y >= 0 && y < gridHeight)
-        {
-            // Check for obstacles
-            if (grid[x, y] != null && grid[x, y].isOccupied)
-            {
-                AttackObstacle(grid[x, y]);
-            }
-            else
-            {
-                transform.position = newPosition;
-            }
-        }
-        else if (x < -0.5) // Check if the enemy has moved beyond the negative end of the grid
-        {
-            Destroy(gameObject); // Destroy the enemy when it reaches the end of the grid
-        }
     }
 
     void AttackObstacle(Tile tile)

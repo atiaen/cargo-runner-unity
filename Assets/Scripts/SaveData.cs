@@ -19,7 +19,7 @@ public class SaveData
     public bool playedTutorial = false;
     public bool infinteMode = false;
     public bool audioAlerts = false;
-    public ControlScheme controlType = ControlScheme.MouseFree;
+    public ControlScheme controlType = ControlScheme.MouseFixedX;
     public KeyBinding keyBindings = new KeyBinding();
     public int highScore = 0;
     public int maxShields = 6;

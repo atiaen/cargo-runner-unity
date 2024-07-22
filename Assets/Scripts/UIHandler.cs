@@ -114,7 +114,7 @@ public class UIHandler : MonoBehaviour
                 });
                 break;
             case 1:
-                tutorialText.text = "The controls are simple. Use your mouse to control your ship. Click the left mouse button to activate your shields";
+                tutorialText.text = "The controls are simple. Use your mouse to control your ship.Press the shield button to activate your shields. This by default is the 'Shift' key but feel free to change it";
                 tutorialImage.sprite = mouseSprite;
                 tutorialImage.transform.DOScale(1, menuAnimSpeed);
                 nextButton.onClick.RemoveAllListeners();
@@ -127,7 +127,7 @@ public class UIHandler : MonoBehaviour
                 break;
             case 2:
                 StartCoroutine(KeysImageCoroutine());
-                tutorialText.text = "You can always change your controls at anytime by pressing the 'Escape' key or 'P' key for the menu and clicking on 'Options'";
+                tutorialText.text = "You can always change your controls at anytime by pressing the 'Escape' key or any key mapped for the pause menu and clicking on 'Options'";
                 nextButton.onClick.RemoveAllListeners();
                 nextButton.onClick.AddListener(() =>
                 {
@@ -161,7 +161,7 @@ public class UIHandler : MonoBehaviour
                 });
                 break;
             case 5:
-                tutorialText.text = "Enjoy Cargo Runners!! and don't forget to fill in the survery in the main menu. ";
+                tutorialText.text = "Enjoy Cargo Runners!! and don't forget to fill in the survey in the main menu. ";
                 nextButton.onClick.RemoveAllListeners();
                 nextButton.onClick.AddListener(() => EndTutorial());
                 break;
@@ -248,10 +248,10 @@ public class UIHandler : MonoBehaviour
         tutorialImage.sprite = escapeKeySprite;
         tutorialImage.transform.DOScale(1, menuAnimSpeed).WaitForCompletion();
         yield return new WaitForSecondsRealtime(3f);
-        tutorialImage.transform.DOScale(0, menuAnimSpeed).WaitForCompletion();
-        tutorialImage.sprite = pKeySprite;
-        tutorialImage.transform.DOScale(1, menuAnimSpeed).WaitForCompletion();
-        yield return new WaitForSecondsRealtime(3f);
+        //tutorialImage.transform.DOScale(0, menuAnimSpeed).WaitForCompletion();
+        //tutorialImage.sprite = pKeySprite;
+        //tutorialImage.transform.DOScale(1, menuAnimSpeed).WaitForCompletion();
+        //yield return new WaitForSecondsRealtime(3f);
         tutorialImage.transform.DOScale(0, menuAnimSpeed);
 
     }

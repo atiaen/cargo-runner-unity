@@ -694,7 +694,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -42.26999}
+  m_AnchoredPosition: {x: 0, y: -62.169987}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &31457849
@@ -2314,8 +2314,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -25}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 93.66986, y: -30.378815}
+  m_SizeDelta: {x: 165.3397, y: 42.7576}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &178834511
 MonoBehaviour:
@@ -2364,7 +2364,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.65
+  m_fontSize: 32.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -15526,7 +15526,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &902157474
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17465,11 +17465,11 @@ MonoBehaviour:
   controlScheme: 0
   gameManager: {fileID: 0}
   engineSound: {fileID: 434903347}
-  detectionRadius: 20
+  detectionRadius: 25
   asteroidLayer:
     serializedVersion: 2
     m_Bits: 64
-  alertCooldown: 2
+  alertCooldown: 1
 --- !u!54 &1019230611
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21065,7 +21065,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 64}
+  m_AnchoredPosition: {x: 0, y: 44.1}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1236864258
@@ -26495,8 +26495,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88.5, y: -59.65}
-  m_SizeDelta: {x: 126.1566, y: 25.3855}
+  m_AnchoredPosition: {x: 84.16284, y: -60.009827}
+  m_SizeDelta: {x: 104.2935, y: 21.7085}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1599192001
 MonoBehaviour:
@@ -26545,7 +26545,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22.55
+  m_fontSize: 19.25
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -27837,7 +27837,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 10.930011}
+  m_AnchoredPosition: {x: 0, y: -8.969987}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1703733512
@@ -28890,6 +28890,7 @@ GameObject:
   - component: {fileID: 1786987634}
   - component: {fileID: 1786987636}
   - component: {fileID: 1786987635}
+  - component: {fileID: 1786987637}
   m_Layer: 5
   m_Name: FailedText
   m_TagString: Untagged
@@ -29013,6 +29014,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786987633}
   m_CullTransparentMesh: 1
+--- !u!114 &1786987637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786987633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Delivery Failed <sprite index=15>
+  m_NameLabel: {fileID: 1786987633}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1804612461
 GameObject:
   m_ObjectHideFlags: 0
@@ -32151,6 +32205,8 @@ MonoBehaviour:
   - Remember to pickup space gems!! They help your score a whole lot
   - You can always reset the starting tutorial at anytime in the options menu using
     only a button
+  - If you'd like to get a bit of practice going why don't you turn on infinite mode.
+    Your score will still count regardless.
   isGameOver: 0
   gamePaused: 0
   playedTutorial: 0

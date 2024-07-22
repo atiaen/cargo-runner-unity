@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ public class BotTurret : MonoBehaviour
     public List<Transform> projectileSpawnPoints;
 
     public GameObject projectile;
+    public TMP_Text healthText;
 
     public BotType botType;
 
@@ -17,17 +19,31 @@ public class BotTurret : MonoBehaviour
     public LayerMask layerMask; // Layer mask to filter the objects to collide with
     public float raycastAngle = 0f; // Angle at which the Raycast is performed
     public int numberOfRays = 3; // Number of rays to cast
+
+    public float shootingInterval = 1.0f; // Time interval between each shot
+    public float projectileSpeed = 10.0f; // Speed of the projectile
+
+    private float nextShotTime;
+
     void Start()
     {
-        
+        nextShotTime = Time.time;
+
+        string formattedValue = botType.health.ToString("F1");
+
+        healthText.text = formattedValue;
     }
 
 
     private void Update()
     {
+        string formattedValue = botType.health.ToString("F1");
+
+        healthText.text = formattedValue;
+
         // The starting point of the Raycasts
         Vector3 origin = transform.position + raycastOriginOffset;
-
+        
         // Perform the Raycasts
         for (int i = 0; i < numberOfRays; i++)
         {
@@ -40,24 +56,41 @@ public class BotTurret : MonoBehaviour
             RaycastHit hit;
             bool isHit = Physics.Raycast(origin, direction, out hit, rayDistance, layerMask);
 
-            // Visualize the Raycast in the Scene view
-            //DrawRaycast(origin, direction, rayDistance, isHit, hit);
-
             // Check if the Raycast hit anything
             if (isHit)
             {
                 Debug.Log("Raycast hit: " + hit.collider.name);
-                for(int j =0; j < projectileSpawnPoints.Count; j++)
-                {
-                    var pos = projectileSpawnPoints[j];
-                    var gb = Instantiate(projectile, pos.position, Quaternion.identity);
-                }
+                ShootBullet();
             }
         }
     }
 
     public void ShootBullet()
     {
+
+        if (Time.time >= nextShotTime)
+        {
+            for (int j = 0; j < projectileSpawnPoints.Count; j++)
+            {
+
+                var pos = projectileSpawnPoints[j];
+                var p = Instantiate(projectile, pos.position, Quaternion.identity);
+
+                // Apply velocity to the projectile
+                Rigidbody rb = p.GetComponent<Rigidbody>();
+                var bulletSpeed = p.GetComponent<Bullet>().bulletSpeed;
+
+                if (rb != null)
+                {
+                    rb.velocity = pos.TransformDirection(-pos.forward * bulletSpeed);
+                }
+
+            }
+
+            nextShotTime = Time.time + shootingInterval;
+
+        }
+        
 
     }
 
@@ -80,17 +113,14 @@ public class BotTurret : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if (!Application.isPlaying)
-        {
-            Vector3 origin = transform.position + raycastOriginOffset;
+        Vector3 origin = transform.position + raycastOriginOffset;
 
-            for (int i = 0; i < numberOfRays; i++)
-            {
-                float angleStep = (numberOfRays > 1) ? (raycastAngle / (numberOfRays - 1)) : 0;
-                float angle = -raycastAngle / 2 + i * angleStep;
-                Vector3 direction = Quaternion.Euler(0, angle, 0) * transform.forward;
-                DrawRaycast(origin, direction, rayDistance, false, new RaycastHit());
-            }
+        for (int i = 0; i < numberOfRays; i++)
+        {
+            float angleStep = (numberOfRays > 1) ? (raycastAngle / (numberOfRays - 1)) : 0;
+            float angle = -raycastAngle / 2 + i * angleStep;
+            Vector3 direction = Quaternion.Euler(0, angle, 0) * transform.forward;
+            DrawRaycast(origin, direction, rayDistance, false, new RaycastHit());
         }
     }
 }
