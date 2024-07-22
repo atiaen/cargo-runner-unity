@@ -12,6 +12,14 @@ public class Enums
         FreeMovementKeyboard
     }
 }
+
+[System.Serializable]
+public struct BotType
+{
+    public float detectionDistance;
+    public float health;
+}
+
 [System.Serializable]
 public class KeyBinding
 {

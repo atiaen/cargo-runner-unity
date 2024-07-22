@@ -259,10 +259,18 @@ public class PlayerScript : MonoBehaviour
 
             if (hits.Length > 0 && Time.time - lastAlertTime >= alertCooldown)
             {
+                Debug.Log("Detected a hit");
                 AudioManager.Instance.PlaySoundEffect("Incoming");
                 lastAlertTime = Time.time;
             }
         }
        
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        // Draw the detection radius in the editor
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
 }

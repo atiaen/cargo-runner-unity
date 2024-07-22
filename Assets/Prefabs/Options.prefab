@@ -106,7 +106,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -45}
+  m_AnchoredPosition: {x: 28.799973, y: -45}
   m_SizeDelta: {x: 105.600006, y: 35.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &154429958375277398
@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 6837480781808334449}
   - component: {fileID: 4689517121215823934}
   - component: {fileID: 30218101697525814}
+  - component: {fileID: 1996091843545080815}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -243,6 +244,59 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1996091843545080815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154429958375277398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Move Up
+  m_NameLabel: {fileID: 154429958375277398}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Change the move up key
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &173038010801377997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1249,6 +1303,7 @@ GameObject:
   - component: {fileID: 6827767297708690979}
   - component: {fileID: 6073924584329240765}
   - component: {fileID: 3400945420069208964}
+  - component: {fileID: 1266696368305872618}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1372,6 +1427,59 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1266696368305872618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828510847181515661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Activate Shield
+  m_NameLabel: {fileID: 828510847181515661}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Change the shield key
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &862677915089821715
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,6 +1677,7 @@ GameObject:
   - component: {fileID: 5739946502081789951}
   - component: {fileID: 4342954044719224014}
   - component: {fileID: 2010412861816738844}
+  - component: {fileID: 7346777303535995626}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1692,6 +1801,59 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &7346777303535995626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145509550767865306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Move Left
+  m_NameLabel: {fileID: 1145509550767865306}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Change the move left key
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1152470583260151421
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,6 +2417,7 @@ GameObject:
   - component: {fileID: 8224347938039152716}
   - component: {fileID: 4969990980712830006}
   - component: {fileID: 1876152627127866866}
+  - component: {fileID: 8004806970657048979}
   m_Layer: 5
   m_Name: Dropdown (1)
   m_TagString: Untagged
@@ -2384,6 +2547,61 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_AlphaFadeSpeed: 0.15
+--- !u!114 &8004806970657048979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364805838188271664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b364a9c32985f6429906a2c32464c4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Control Scheme Dropdown
+  m_NameLabel: {fileID: 0}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 0
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 6
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Choose from Mouse Free,Mouse Fixed,Keyboard Fixed,Keyboard Free in that
+    order
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ValuesAsAudio: []
 --- !u!1 &1374019517123463768
 GameObject:
   m_ObjectHideFlags: 0
@@ -2418,7 +2636,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.3}
+  m_AnchoredPosition: {x: 28.799974, y: 0.3}
   m_SizeDelta: {x: 118.13, y: 64.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1427167843789031325
@@ -2493,8 +2711,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 453.52768}
-  m_SizeDelta: {x: 0, y: 737.8}
+  m_AnchoredPosition: {x: 0, y: 744.2149}
+  m_SizeDelta: {x: 0, y: 785.5927}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1604144370128201443
 GameObject:
@@ -2755,6 +2973,7 @@ GameObject:
   - component: {fileID: 39453795913551502}
   - component: {fileID: 6606983153188423182}
   - component: {fileID: 5439394352926500871}
+  - component: {fileID: 9070686343852250000}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2878,6 +3097,59 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &9070686343852250000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684309027508561209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Pause Game
+  m_NameLabel: {fileID: 1684309027508561209}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Change the pause key
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1723379710041827640
 GameObject:
   m_ObjectHideFlags: 0
@@ -3003,7 +3275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -15.8}
+  m_AnchoredPosition: {x: 0, y: -26.7}
   m_SizeDelta: {x: 196.2, y: 36.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6927808135847466041
@@ -3279,6 +3551,7 @@ GameObject:
   - component: {fileID: 8498509670364611329}
   - component: {fileID: 6091605451120205793}
   - component: {fileID: 7094687545349715455}
+  - component: {fileID: 5032628045156111011}
   m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
@@ -3386,6 +3659,59 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 6091605451120205793}
   m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5032628045156111011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827486308495607054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093d8d6245e39e64dbd48d45cc3c40c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: S
+  m_NameLabel: {fileID: 3256902055642832953}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 1
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Press enter and then press your desired key
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &1848559992226690261
@@ -3568,10 +3894,10 @@ MonoBehaviour:
   m_CallbackOnHighlight:
     m_PersistentCalls:
       m_Calls: []
-  m_ReadPercentages: 1
-  m_Increments: 5
-  m_IncrementInPercent: 1
-  m_WholeNumbersOnly: 1
+  m_ReadPercentages: 0
+  m_Increments: 0.5
+  m_IncrementInPercent: 0
+  m_WholeNumbersOnly: 0
 --- !u!1 &1863116236050980019
 GameObject:
   m_ObjectHideFlags: 0
@@ -3968,6 +4294,7 @@ GameObject:
   - component: {fileID: 677886629830829360}
   - component: {fileID: 5372523546845008131}
   - component: {fileID: 4508019501083637022}
+  - component: {fileID: 3306398568112081201}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -4091,6 +4418,59 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &3306398568112081201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990896786231926670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Decrease Rate
+  m_NameLabel: {fileID: 1990896786231926670}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: In seconds how fast does the inital spawn rate decrease
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1997817650397689423
 GameObject:
   m_ObjectHideFlags: 0
@@ -4102,6 +4482,7 @@ GameObject:
   - component: {fileID: 3766320634539564511}
   - component: {fileID: 6773331464263317290}
   - component: {fileID: 1185790647618464571}
+  - component: {fileID: 4527230412089460146}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -4225,6 +4606,59 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &4527230412089460146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997817650397689423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Minimum Spawn Rate
+  m_NameLabel: {fileID: 1997817650397689423}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: In seconds what is the lowest possible seconds the asteroids spawn
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2042340544191675514
 GameObject:
   m_ObjectHideFlags: 0
@@ -4610,6 +5044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2683072051136661189}
   - component: {fileID: 1406484487343151379}
+  - component: {fileID: 1269955972937285254}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -4686,6 +5121,65 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
+--- !u!114 &1269955972937285254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2486671008832712668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e5a6303525c22643a9ca4bbe020c1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Infinite Mode Toggle
+  m_NameLabel: {fileID: 0}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 0
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 3
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Turn on infinite mode?
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
+  m_UseCustomOnOff: 0
+  m_CustomOn: Checked
+  m_CustomOff: Not Checked
+  m_CustomHintsAreLocalizationKeys: 0
+  m_CustomOnAudio: {fileID: 0}
+  m_CustomOffAudio: {fileID: 0}
 --- !u!1 &2497409926577345559
 GameObject:
   m_ObjectHideFlags: 0
@@ -4885,7 +5379,6 @@ GameObject:
   m_Component:
   - component: {fileID: 36790209701844209}
   - component: {fileID: 719395139164701564}
-  - component: {fileID: 6826779912137819411}
   m_Layer: 5
   m_Name: Toggle (1)
   m_TagString: Untagged
@@ -4911,8 +5404,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 53.8, y: -42.4}
-  m_SizeDelta: {x: 250, y: 53}
+  m_AnchoredPosition: {x: 53.8, y: -51}
+  m_SizeDelta: {x: 250, y: 31.6877}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &719395139164701564
 MonoBehaviour:
@@ -4962,66 +5455,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
---- !u!114 &6826779912137819411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2594960728077771705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 565a2cc68d2ef50409c6fe5e98f515ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OnInteractionStart:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnInteractionEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnInteractionAbort:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ForceStartHere: 0
-  m_ManualPositionOrder: -1
-  m_ManualPositionParent: {fileID: 0}
-  m_UseTargetForOutline: 0
-  m_PositionOrder: 0
-  m_SecondaryOrder: 0
-  m_Pos: {x: 0, y: 0}
-  m_TextAsAudio: {fileID: 0}
-  m_Prefix: 
-  m_PrefixIsLocalizationKey: 0
-  m_PrefixIsPostFix: 0
-  m_FilterText: 1
-  m_Text: Asteroid Alerts?
-  m_NameLabel: {fileID: 5864681306491548704}
-  m_AdditionalNameLabels: []
-  m_TestList: []
-  m_IsLocalizationKey: 0
-  m_TryToReadLabel: 1
-  m_ReferenceElement: {fileID: 0}
-  m_AllowVoiceOver: 1
-  m_ReadType: 1
-  m_WasJustAdded: 1
-  m_Type: 3
-  m_CustomHint: 0
-  m_HintAsAudio: {fileID: 0}
-  m_Hint: 
-  m_HintIsLocalizationKey: 0
-  m_IsInsideScrollView: 0
-  m_IsInitialized: 1
-  m_CallbackOnHighlight:
-    m_PersistentCalls:
-      m_Calls: []
-  m_UseCustomOnOff: 0
-  m_CustomOn: Checked
-  m_CustomOff: Not Checked
-  m_CustomHintsAreLocalizationKeys: 0
-  m_CustomOnAudio: {fileID: 0}
-  m_CustomOffAudio: {fileID: 0}
-  m_HandleActivation: 1
 --- !u!1 &2608635715467847755
 GameObject:
   m_ObjectHideFlags: 0
@@ -5086,6 +5519,7 @@ GameObject:
   - component: {fileID: 3441531300568313443}
   - component: {fileID: 5891595494003774637}
   - component: {fileID: 4407892931824806580}
+  - component: {fileID: 381323068007079476}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -5209,6 +5643,59 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &381323068007079476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2681092202521429291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Move Down
+  m_NameLabel: {fileID: 2681092202521429291}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Change the down key
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2697052090498358809
 GameObject:
   m_ObjectHideFlags: 0
@@ -5219,6 +5706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5681826390176725354}
   - component: {fileID: 5052681629545620519}
+  - component: {fileID: 2595559801519680127}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -5292,13 +5780,70 @@ MonoBehaviour:
   m_FillRect: {fileID: 2687054365967782635}
   m_HandleRect: {fileID: 3846568014219469539}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 1
   m_MaxValue: 50
   m_WholeNumbers: 1
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2595559801519680127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2697052090498358809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836dce83f35c9d248a156dd8318fc9f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Move Speed Slider
+  m_NameLabel: {fileID: 0}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 0
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 4
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ReadPercentages: 0
+  m_Increments: 1
+  m_IncrementInPercent: 0
+  m_WholeNumbersOnly: 1
 --- !u!1 &2713589258025873301
 GameObject:
   m_ObjectHideFlags: 0
@@ -6305,6 +6850,7 @@ GameObject:
   - component: {fileID: 818051966917958943}
   - component: {fileID: 938567579605629659}
   - component: {fileID: 8465500188142393476}
+  - component: {fileID: 3104928950869916063}
   m_Layer: 5
   m_Name: Shield
   m_TagString: Untagged
@@ -6412,6 +6958,59 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 938567579605629659}
   m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &3104928950869916063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3183947571563383618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093d8d6245e39e64dbd48d45cc3c40c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: W
+  m_NameLabel: {fileID: 1635901917926626703}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 1
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Press enter and then press your desired key
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &3240338854482974983
@@ -6871,6 +7470,7 @@ GameObject:
   - component: {fileID: 552601987918745204}
   - component: {fileID: 428814630937823667}
   - component: {fileID: 6420948114053549811}
+  - component: {fileID: 3205299050692792229}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6994,6 +7594,59 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &3205299050692792229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3392440956481363641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Initial Spawn Rate
+  m_NameLabel: {fileID: 3823601934666934937}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: In seconds modify how fast the pickups start to spawn
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3392778402695309375
 GameObject:
   m_ObjectHideFlags: 0
@@ -7327,6 +7980,7 @@ GameObject:
   - component: {fileID: 2789816786357295833}
   - component: {fileID: 5845682738085746552}
   - component: {fileID: 2075586661778153216}
+  - component: {fileID: 8638875747934952008}
   m_Layer: 5
   m_Name: Label
   m_TagString: Untagged
@@ -7450,6 +8104,59 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &8638875747934952008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3476021431604795193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Input Settings
+  m_NameLabel: {fileID: 3476021431604795193}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Customize your input settings
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3506462517824839325
 GameObject:
   m_ObjectHideFlags: 0
@@ -7671,6 +8378,7 @@ GameObject:
   - component: {fileID: 7032171003448269107}
   - component: {fileID: 1875419025171173347}
   - component: {fileID: 1966086007843712277}
+  - component: {fileID: 2773229371105107606}
   m_Layer: 5
   m_Name: Down
   m_TagString: Untagged
@@ -7778,6 +8486,59 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1875419025171173347}
   m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2773229371105107606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3558880831470109631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093d8d6245e39e64dbd48d45cc3c40c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: S
+  m_NameLabel: {fileID: 276092665186979358}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 1
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Press enter and then press your desired key
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &3598335515291790507
@@ -8218,6 +8979,7 @@ GameObject:
   - component: {fileID: 4869987689507962031}
   - component: {fileID: 7047106582139777499}
   - component: {fileID: 313392903703617999}
+  - component: {fileID: 5360582923289636102}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -8341,6 +9103,59 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5360582923289636102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3823601934666934937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Initial Spawn Rate
+  m_NameLabel: {fileID: 3823601934666934937}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: In seconds modify how fast the asteroids start to spawn
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3863171583002425919
 GameObject:
   m_ObjectHideFlags: 0
@@ -8464,6 +9279,7 @@ GameObject:
   - component: {fileID: 4955279576780243092}
   - component: {fileID: 7847801469230896826}
   - component: {fileID: 4101096518133090983}
+  - component: {fileID: 247293317129268410}
   m_Layer: 5
   m_Name: Left
   m_TagString: Untagged
@@ -8571,6 +9387,59 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 7847801469230896826}
   m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &247293317129268410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3893403034650305733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093d8d6245e39e64dbd48d45cc3c40c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: A
+  m_NameLabel: {fileID: 3118506641910056080}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 1
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Press enter and then press your desired key
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &3896426273703885971
@@ -9002,6 +9871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8983654856248797104}
   - component: {fileID: 5512262103336361077}
+  - component: {fileID: 6196925223314650680}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -9082,6 +9952,63 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6196925223314650680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4102752250558820152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836dce83f35c9d248a156dd8318fc9f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Decrease Settings Slider
+  m_NameLabel: {fileID: 0}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 0
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 4
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ReadPercentages: 0
+  m_Increments: 0.1
+  m_IncrementInPercent: 0
+  m_WholeNumbersOnly: 0
 --- !u!1 &4106556375264981923
 GameObject:
   m_ObjectHideFlags: 0
@@ -9204,6 +10131,7 @@ GameObject:
   - component: {fileID: 7130629141141295340}
   - component: {fileID: 3426739412619268985}
   - component: {fileID: 6454988677162930222}
+  - component: {fileID: 3568842275727091585}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9329,6 +10257,61 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &3568842275727091585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4170335633767402946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: 'Move Speed:
+
+'
+  m_NameLabel: {fileID: 4170335633767402946}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Customize the speed of the ship when using your keyboard
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4183054255694147990
 GameObject:
   m_ObjectHideFlags: 0
@@ -9547,7 +10530,7 @@ MonoBehaviour:
   m_Type: 2
   m_CustomHint: 1
   m_HintAsAudio: {fileID: 0}
-  m_Hint: Modify asteroid spawning settings
+  m_Hint: Here you can modify how often asteroids spawn
   m_HintIsLocalizationKey: 0
   m_IsInsideScrollView: 0
   m_IsInitialized: 1
@@ -9657,8 +10640,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5855575844761344557}
   - {fileID: 805840735466063779}
+  - {fileID: 5855575844761344557}
   m_Father: {fileID: 3506634984857733209}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
@@ -10226,6 +11209,194 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &4612945552378530099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5693651684893163855}
+  - component: {fileID: 7743783390468803003}
+  - component: {fileID: 5653534605577242045}
+  - component: {fileID: 70310675925131092}
+  m_Layer: 5
+  m_Name: Text (TMP) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5693651684893163855
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4612945552378530099}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5646264911221488424}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 14.1, y: 9.1}
+  m_SizeDelta: {x: 290.686, y: 41.2399}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7743783390468803003
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4612945552378530099}
+  m_CullTransparentMesh: 1
+--- !u!114 &5653534605577242045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4612945552378530099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Press one of the buttons and then press your desired key to change it
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 865c46c5498e06b4dbb83d7310a55ba1, type: 2}
+  m_sharedMaterial: {fileID: 8702784881068690105, guid: 865c46c5498e06b4dbb83d7310a55ba1, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 12
+  m_fontSizeBase: 12
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -0.3984299, w: -0.15394783}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &70310675925131092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4612945552378530099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Press one of the buttons and then press your desired key to change it
+  m_NameLabel: {fileID: 4612945552378530099}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4668686727581084619
 GameObject:
   m_ObjectHideFlags: 0
@@ -10237,6 +11408,7 @@ GameObject:
   - component: {fileID: 6864701715977610156}
   - component: {fileID: 1228601962446716000}
   - component: {fileID: 5209760837910745607}
+  - component: {fileID: 765543783285599362}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -10258,10 +11430,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5646264911221488424}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -24.18}
-  m_SizeDelta: {x: 193.7065, y: 41.2399}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 11.8, y: 37.9}
+  m_SizeDelta: {x: 290.686, y: 41.2399}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1228601962446716000
 CanvasRenderer:
@@ -10318,7 +11490,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.35
+  m_fontSize: 19.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10354,12 +11526,65 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0.12789956, w: -0.15394783}
+  m_margin: {x: 0, y: 0, z: -0.3984299, w: -0.15394783}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &765543783285599362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4668686727581084619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Remap Keys (KEYBOARD ONLY)
+  m_NameLabel: {fileID: 4668686727581084619}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4697408666992661975
 GameObject:
   m_ObjectHideFlags: 0
@@ -10691,6 +11916,7 @@ GameObject:
   - component: {fileID: 1899502817158690976}
   - component: {fileID: 7632577205093736519}
   - component: {fileID: 2297951439843180556}
+  - component: {fileID: 2329295258911876804}
   m_Layer: 5
   m_Name: Right
   m_TagString: Untagged
@@ -10798,6 +12024,59 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 7632577205093736519}
   m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2329295258911876804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4746768770292255896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093d8d6245e39e64dbd48d45cc3c40c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: D
+  m_NameLabel: {fileID: 6444711204472913088}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 1
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Press enter and then press your desired key
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &4855739991958654870
@@ -11207,6 +12486,7 @@ GameObject:
   - component: {fileID: 4316530485949777341}
   - component: {fileID: 7739290466505811672}
   - component: {fileID: 4462512295900786407}
+  - component: {fileID: 243974960019001731}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -11330,6 +12610,59 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &243974960019001731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5019681529462580252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Minimum Spawn Rate
+  m_NameLabel: {fileID: 1997817650397689423}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: In seconds what is the lowest possible seconds the pickups spawner
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5115322579830548631
 GameObject:
   m_ObjectHideFlags: 0
@@ -12457,7 +13790,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 5.5, y: 3.8}
+  m_AnchoredPosition: {x: 34.3, y: 3.8}
   m_SizeDelta: {x: 105.6, y: 35.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5562205642908513708
@@ -12863,6 +14196,7 @@ GameObject:
   - component: {fileID: 5226123466211951326}
   - component: {fileID: 1977676371851421100}
   - component: {fileID: 7477900700256197189}
+  - component: {fileID: 8173552679617406957}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -12986,6 +14320,59 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &8173552679617406957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5716446031877507670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Pickup Settings
+  m_NameLabel: {fileID: 5716446031877507670}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Modify spawner settings for pickups
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5725403613456682355
 GameObject:
   m_ObjectHideFlags: 0
@@ -13069,6 +14456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 423896282400498796}
   - component: {fileID: 5179840269724056884}
+  - component: {fileID: 5955589939938398673}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -13149,6 +14537,63 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5955589939938398673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5808022581164743057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836dce83f35c9d248a156dd8318fc9f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Decrease Settings Slider
+  m_NameLabel: {fileID: 0}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 0
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 4
+  m_CustomHint: 0
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ReadPercentages: 0
+  m_Increments: 0.1
+  m_IncrementInPercent: 0
+  m_WholeNumbersOnly: 0
 --- !u!1 &5864681306491548704
 GameObject:
   m_ObjectHideFlags: 0
@@ -13609,6 +15054,7 @@ GameObject:
   - component: {fileID: 6066664929460406896}
   - component: {fileID: 392112929132127245}
   - component: {fileID: 8129846108997540566}
+  - component: {fileID: 8103853465211216705}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -13732,6 +15178,59 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &8103853465211216705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6188350612765105852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Decrease Rate
+  m_NameLabel: {fileID: 1990896786231926670}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: In seconds how fast does the inital spawn rate decrease
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6283325223102505002
 GameObject:
   m_ObjectHideFlags: 0
@@ -13893,6 +15392,7 @@ GameObject:
   - component: {fileID: 805840735466063779}
   - component: {fileID: 7333966986265775878}
   - component: {fileID: 1035198301692272297}
+  - component: {fileID: 5476434198162517521}
   m_Layer: 5
   m_Name: Control Label
   m_TagString: Untagged
@@ -14016,6 +15516,60 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5476434198162517521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6364820867552665372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: 'Control Scheme:'
+  m_NameLabel: {fileID: 6364820867552665372}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Choose from Mouse Free,Mouse Fixed,Keyboard Fixed,Keyboard Free in that
+    order
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6386710064309747011
 GameObject:
   m_ObjectHideFlags: 0
@@ -14864,7 +16418,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -125.334236, y: -8.2}
+  m_AnchoredPosition: {x: -125.334236, y: -42.8}
   m_SizeDelta: {x: 220.9761, y: 40.297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6632167359106450109
@@ -15161,6 +16715,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1006250266814589906}
   - component: {fileID: 5923382100631335394}
+  - component: {fileID: 7029177987840336729}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -15241,6 +16796,63 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7029177987840336729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6712743172515572190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836dce83f35c9d248a156dd8318fc9f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Start Spawn Rate
+  m_NameLabel: {fileID: 0}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 0
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 4
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ReadPercentages: 0
+  m_Increments: 0.5
+  m_IncrementInPercent: 0
+  m_WholeNumbersOnly: 0
 --- !u!1 &6829562765222496833
 GameObject:
   m_ObjectHideFlags: 0
@@ -15966,8 +17578,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 53.8, y: 0}
-  m_SizeDelta: {x: 250, y: 53}
+  m_AnchoredPosition: {x: 53.8, y: 8.1}
+  m_SizeDelta: {x: 250, y: 26.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6381083728930673677
 MonoBehaviour:
@@ -16356,7 +17968,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 99.7, y: -121}
+  m_AnchoredPosition: {x: 99.7, y: -155.59995}
   m_SizeDelta: {x: 220.9761, y: 40.297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7383713761920759777
@@ -17483,7 +19095,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -125.98, y: -119.10003}
+  m_AnchoredPosition: {x: -125.98, y: -153.69998}
   m_SizeDelta: {x: 222.28, y: 40.297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7954885412907745517
@@ -17515,6 +19127,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6864701715977610156}
+  - {fileID: 5693651684893163855}
   - {fileID: 2250271045739417885}
   - {fileID: 3950767303122555394}
   - {fileID: 416593549342053538}
@@ -17525,8 +19138,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -124}
-  m_SizeDelta: {x: 0, y: 142.5128}
+  m_AnchoredPosition: {x: 0, y: -96.918015}
+  m_SizeDelta: {x: 0, y: 115.7488}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7959878764138052541
 GameObject:
@@ -17771,7 +19384,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 99.7, y: -65.05153}
+  m_AnchoredPosition: {x: 99.7, y: -99.65148}
   m_SizeDelta: {x: 220.9761, y: 40.297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8038202086425337333
@@ -18025,6 +19638,7 @@ GameObject:
   - component: {fileID: 5717107800841809323}
   - component: {fileID: 937269379838878572}
   - component: {fileID: 792113047766410591}
+  - component: {fileID: 1935833248274342980}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -18148,6 +19762,59 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1935833248274342980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8182172118765731562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d52c398d6e508e428bb1c7d8f0083e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Move Right
+  m_NameLabel: {fileID: 8182172118765731562}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 2
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Change the move right key
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8188550633853772744
 GameObject:
   m_ObjectHideFlags: 0
@@ -18182,7 +19849,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 99.7, y: -8.200026}
+  m_AnchoredPosition: {x: 99.7, y: -42.79998}
   m_SizeDelta: {x: 220.9761, y: 40.297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8230764259422386320
@@ -18219,7 +19886,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -125.98, y: -63.151524}
+  m_AnchoredPosition: {x: -125.98, y: -97.75148}
   m_SizeDelta: {x: 222.28, y: 40.297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8242225841568037747
@@ -18630,6 +20297,7 @@ GameObject:
   - component: {fileID: 5696489772433893336}
   - component: {fileID: 6337033102855715387}
   - component: {fileID: 1246393821992853189}
+  - component: {fileID: 5420110196969256455}
   m_Layer: 5
   m_Name: Up
   m_TagString: Untagged
@@ -18737,6 +20405,59 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 6337033102855715387}
   m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5420110196969256455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8399762696895509111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093d8d6245e39e64dbd48d45cc3c40c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: W
+  m_NameLabel: {fileID: 638191060442019489}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 1
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 1
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: Press enter and then press your desired key
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &8451292321633288439
@@ -19269,6 +20990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2417499155342467564}
   - component: {fileID: 2613381148341284957}
+  - component: {fileID: 7225463974176149760}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -19349,6 +21071,63 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7225463974176149760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8795541135756177459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836dce83f35c9d248a156dd8318fc9f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnInteractionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnInteractionAbort:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ForceStartHere: 0
+  m_ManualPositionOrder: -1
+  m_ManualPositionParent: {fileID: 0}
+  m_UseTargetForOutline: 0
+  m_PositionOrder: 0
+  m_SecondaryOrder: 0
+  m_Pos: {x: 0, y: 0}
+  m_TextAsAudio: {fileID: 0}
+  m_Prefix: 
+  m_PrefixIsLocalizationKey: 0
+  m_PrefixIsPostFix: 0
+  m_FilterText: 1
+  m_Text: Minimum Settings
+  m_NameLabel: {fileID: 0}
+  m_AdditionalNameLabels: []
+  m_TestList: []
+  m_IsLocalizationKey: 0
+  m_TryToReadLabel: 0
+  m_ReferenceElement: {fileID: 0}
+  m_AllowVoiceOver: 1
+  m_ReadType: 1
+  m_WasJustAdded: 1
+  m_Type: 4
+  m_CustomHint: 1
+  m_HintAsAudio: {fileID: 0}
+  m_Hint: 
+  m_HintIsLocalizationKey: 0
+  m_IsInsideScrollView: 0
+  m_IsInitialized: 1
+  m_CallbackOnHighlight:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ReadPercentages: 0
+  m_Increments: 0.5
+  m_IncrementInPercent: 0
+  m_WholeNumbersOnly: 0
 --- !u!1 &8837106759874812265
 GameObject:
   m_ObjectHideFlags: 0
@@ -20649,17 +22428,17 @@ MonoBehaviour:
   m_Type: 4
   m_CustomHint: 1
   m_HintAsAudio: {fileID: 0}
-  m_Hint: Specify the starting spawn speed
+  m_Hint: 
   m_HintIsLocalizationKey: 0
   m_IsInsideScrollView: 0
   m_IsInitialized: 1
   m_CallbackOnHighlight:
     m_PersistentCalls:
       m_Calls: []
-  m_ReadPercentages: 1
-  m_Increments: 5
-  m_IncrementInPercent: 1
-  m_WholeNumbersOnly: 1
+  m_ReadPercentages: 0
+  m_Increments: 0.5
+  m_IncrementInPercent: 0
+  m_WholeNumbersOnly: 0
 --- !u!1 &9223184830960907122
 GameObject:
   m_ObjectHideFlags: 0

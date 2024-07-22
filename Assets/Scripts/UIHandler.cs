@@ -70,16 +70,19 @@ public class UIHandler : MonoBehaviour
         pausePanel.transform.DOScale(0, menuAnimSpeed);
         gameOverPanel.transform.DOScale(0, menuAnimSpeed);
         confirmExitPanel.transform.DOScale(0, menuAnimSpeed);
+        optionsPanel.SetActive(true);
         optionsPanel.transform.DOScale(1f, menuAnimSpeed);
     }
 
     public void OnPauseGame()
     {
+        pausePanel.SetActive(true);
         pausePanel.transform.DOScale(1, menuAnimSpeed);
     }
 
     public void StartTutorial()
     {
+        tutorialPanel.SetActive(true);
         tutorialPanel.transform.DOScale(1, menuAnimSpeed);
         StartPulsating();
         ShowNextStep();
@@ -90,6 +93,7 @@ public class UIHandler : MonoBehaviour
         AudioManager.Instance.PlaySoundEffect("Click");
         Time.timeScale = 1f;
         tutorialPanel.transform.DOScale(0, menuAnimSpeed);
+        tutorialPanel.SetActive(false);
         GameManager.Instance.gameData.playedTutorial = true;
         SaveSystem.SaveGame(GameManager.Instance.gameData);
     }
@@ -173,6 +177,10 @@ public class UIHandler : MonoBehaviour
         pausePanel.transform.DOScale(0, menuAnimSpeed);
         confirmExitPanel.transform.DOScale(0, menuAnimSpeed);
         optionsPanel.transform.DOScale(0, menuAnimSpeed);
+        pausePanel.SetActive(false);
+        confirmExitPanel.SetActive(false);
+        optionsPanel.SetActive(false);
+
     }
 
     public void OnBackClick()
@@ -180,6 +188,9 @@ public class UIHandler : MonoBehaviour
         optionsPanel.transform.DOScale(0, menuAnimSpeed);
         confirmExitPanel.transform.DOScale(0, menuAnimSpeed);
         pausePanel.transform.DOScale(1, menuAnimSpeed);
+        confirmExitPanel.SetActive(false);
+        optionsPanel.SetActive(false);
+        pausePanel.SetActive(true);
 
     }
 
@@ -187,6 +198,10 @@ public class UIHandler : MonoBehaviour
     {
         pausePanel.transform.DOScale(0, menuAnimSpeed);
         confirmExitPanel.transform.DOScale(1.3f, menuAnimSpeed);
+
+        pausePanel.SetActive(false);
+        confirmExitPanel.SetActive(true);
+
     }
 
     public void StartPulsating()
@@ -209,7 +224,13 @@ public class UIHandler : MonoBehaviour
         pausePanel.transform.DOScale(0, menuAnimSpeed);
         confirmExitPanel.transform.DOScale(0, menuAnimSpeed);
         optionsPanel.transform.DOScale(0, menuAnimSpeed);
+
+        gameOverPanel.SetActive(true);
         gameOverPanel.transform.DOScale(1, menuAnimSpeed);
+
+        confirmExitPanel.SetActive(false);
+        pausePanel.SetActive(false);
+
     }
 
     public void ShowRandomTip()
@@ -252,6 +273,9 @@ public class UIHandler : MonoBehaviour
     {
         confirmExitPanel.transform.DOScale(0, menuAnimSpeed);
         pausePanel.transform.DOScale(1, menuAnimSpeed);
+
+        confirmExitPanel.SetActive(false);
+        pausePanel.SetActive(true);
 
     }
 

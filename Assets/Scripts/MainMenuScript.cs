@@ -12,6 +12,8 @@ public class MainMenuScript : MonoBehaviour
 
     public GameObject confirmExit;
 
+    public GameObject creditsPanel;
+
     public float mainMenuAnimSpeed;
 
     public float optionsAnimSpeed;
@@ -55,15 +57,38 @@ public class MainMenuScript : MonoBehaviour
 
     public void OnBackClick()
     {
+        creditsPanel.transform.DOScale(0, mainMenuAnimSpeed);
         optionsPanel.transform.DOScale(0, optionsAnimSpeed);
         confirmExit.transform.DOScale(0, mainMenuAnimSpeed);
         optionsPanel.SetActive(false);
+        creditsPanel.SetActive(false);
         mainMenuPanel.SetActive(true);
         mainMenuPanel.transform.DOScale(1, mainMenuAnimSpeed);
-        
 
     }
 
+    public void OpenCredits()
+    {
+        optionsPanel.transform.DOScale(0, optionsAnimSpeed);
+        confirmExit.transform.DOScale(0, mainMenuAnimSpeed);
+        mainMenuPanel.transform.DOScale(0, mainMenuAnimSpeed);
+        optionsPanel.SetActive(false);
+        mainMenuPanel.SetActive(false);
+        creditsPanel.SetActive(true);
+        creditsPanel.transform.DOScale(1, mainMenuAnimSpeed);
+    }
+
+    //public void CloseCredits()
+    //{
+    //    creditsPanel.transform.DOScale(0, mainMenuAnimSpeed);
+    //    optionsPanel.transform.DOScale(0, optionsAnimSpeed);
+    //    confirmExit.transform.DOScale(0, mainMenuAnimSpeed);
+    //    optionsPanel.SetActive(false);
+    //    creditsPanel.SetActive(false);
+    //    mainMenuPanel.SetActive(true);
+    //    mainMenuPanel.transform.DOScale(1, mainMenuAnimSpeed);
+
+    //}
     public void OnExitClick()
     {
         confirmExit.SetActive(true);
